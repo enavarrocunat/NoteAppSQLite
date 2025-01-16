@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".ui.AgregarNotaActivity">
+
+    <TextView
+        android:id="@+id/txt_agregar_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="@string/txt_agregar_nota"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/primary"/>
+
+    <ImageView
+        android:id="@+id/ib_guardar_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/txt_agregar_nota"
+        android:layout_alignBottom="@id/txt_agregar_nota"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/icono_check"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_agregar_nota"
+        android:layout_marginTop="15dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_titulo"
+            android:maxLines="1"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_titulo"
+        android:layout_marginTop="15dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_descripcion"
+            android:maxLines="1"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>
