@@ -30,7 +30,8 @@
         android:layout_alignTop="@id/txt_agregar_nota"
         android:layout_alignBottom="@id/txt_agregar_nota"
         android:layout_marginEnd="5dp"
-        android:src="@drawable/icono_check"/>
+        android:src="@drawable/icono_check"
+        app:tint="@color/primary"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_titulo"
